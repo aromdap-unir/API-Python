@@ -2,7 +2,7 @@ service: serverless-rest-api-with-dynamodb
 app: api-restful-todo
 org: aromdap
 
-frameworkVersion: "1.75"
+frameworkVersion: "2.18.0"
 
 provider:
   name: aws
