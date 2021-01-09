@@ -1,0 +1,5 @@
+  POST { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos }
+  GET { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos }
+  GET { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
+  PUT { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
+  DELETE { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
