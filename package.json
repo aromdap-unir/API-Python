@@ -3,13 +3,6 @@
   "version": "1.0.0",
   "description": "Serverless CRUD service exposing a REST HTTP interface",
   "author": "",
-  "license": "MIT",
-  "scripts": {
-    "postinstall": "pip3 install -r requirements.txt",
-    "test": "pytest test/TestToDo.py"
-  },
-  "devDependencies": {
-    "serverless-python-requirements": "^5.0.1"
-  }
+  "license": "MIT"
 }
 
