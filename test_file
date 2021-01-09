@@ -1,5 +1,9 @@
-  POST { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos }
-  GET { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos }
-  GET { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
-  PUT { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
-  DELETE { curl https://rq9qucnu2e.execute-api.us-east-1.amazonaws.com/dev/todos/{id} }
+  POST - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos
+  GET - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos
+  GET - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos/{id}
+  PUT - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos/{id}
+  DELETE - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos/{id}
+  GET - https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos/{id}/{from}/{to}
+  
+  curl https://sga95nezh0.execute-api.us-east-1.amazonaws.com/dev/todos --data '{ "text": "Learn Serverless is hard" }'
+  {"id": "315dbf3f-52a8-11eb-8426-0d18cacab81e", "text": "Learn Serverless is hard", "checked": false, "createdAt": "1610216790.0910945", "updatedAt": "1610216790.0910945"}
