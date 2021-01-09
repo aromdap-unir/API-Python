@@ -1,8 +1,8 @@
-service: serverless-rest-api-with-dynamodb
+service: serverless-dynamodb
 app: api-restful-todo
 org: aromdap
 
-frameworkVersion: ">=1.1.0 <2.0.0"
+frameworkVersion: ">=1.1.0 <2.2.0"
 
 provider:
   name: aws
@@ -61,6 +61,14 @@ functions:
           method: delete
           cors: true
 
+  translate:
+    handler: todos/translate.translate
+    events:
+      - http:
+          path: todos/{id}
+          method: get
+          cors: true
+          
 resources:
   Resources:
     TodosDynamoDbTable:
