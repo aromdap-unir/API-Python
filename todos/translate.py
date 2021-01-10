@@ -12,7 +12,7 @@ def translate(event, context):
     # fetch todo from the database
     result = table.get_item(
         Key={
-            'id': event['pathParameters']['id']
+            'id': event['pathParameters']['id'],
         }
     )
 
@@ -31,7 +31,7 @@ def translate(event, context):
     response = {
         "statusCode": 200,
         "body": json.dumps(result['Item'],
-#        "body": json.dumps(result.get(‘TranslatedText’),
+##        "body": json.dumps(result.get(‘TranslatedText’),
                            cls=decimalencoder.DecimalEncoder)
     }
 
