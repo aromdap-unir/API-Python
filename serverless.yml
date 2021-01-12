@@ -2,11 +2,8 @@ service: serverless-dynamodb
 app: api-restful-todo
 org: aromdap
 
-<<<<<<< HEAD
-frameworkVersion: "2.18.0"
-=======
 frameworkVersion: ">=1.1.0"
->>>>>>> dev
+
 
 provider:
   name: aws
